@@ -17,7 +17,7 @@ if __name__=='__main__':
         data_ingestion_config=DataIngestionConfig(training_pipeline_config)
         data_ingestion=DataIngestion(data_ingestion_config)
 
-        logging.log("Initiate the data ingestion component")
+        logging.info(f"Exported train and test file path.")
 
         data_ingestion_artifact=data_ingestion.initiate_data_ingestion()
         print(data_ingestion_artifact)
