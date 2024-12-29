@@ -1,0 +1,10 @@
+[ 2024-12-14 10:14:56,166 ] 21 root - INFO - Exported train and test file path.
+[ 2024-12-14 10:15:00,700 ] 96 pymongo.serverSelection - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 675d0d4c09fe2c731f2b02d6, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "675d0d4c09fe2c731f2b02d6"}, "remainingTimeMS": 30}
+[ 2024-12-14 10:15:06,267 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2024-12-14 10:15:06,267 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-12-14 10:15:06,267 ] 75 root - INFO - Exporting train and test file path.
+[ 2024-12-14 10:15:06,577 ] 84 root - INFO - Exported train and test file path.
+[ 2024-12-14 10:15:06,589 ] 26 root - INFO - Data Ingestion is completed
+[ 2024-12-14 10:15:06,589 ] 27 root - INFO - Data Validataion initiated
+[ 2024-12-14 10:15:06,833 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-14 10:15:06,834 ] 33 root - INFO - Dataframe has columns:32

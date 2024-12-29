@@ -1,0 +1,17 @@
+[ 2024-12-14 10:24:34,679 ] 21 root - INFO - Exported train and test file path.
+[ 2024-12-14 10:24:39,146 ] 96 pymongo.serverSelection - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 675d0f8f14381af907750b41, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "675d0f8f14381af907750b41"}, "remainingTimeMS": 30}
+[ 2024-12-14 10:24:43,955 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2024-12-14 10:24:43,955 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-12-14 10:24:43,955 ] 75 root - INFO - Exporting train and test file path.
+[ 2024-12-14 10:24:44,204 ] 84 root - INFO - Exported train and test file path.
+[ 2024-12-14 10:24:44,208 ] 26 root - INFO - Data Ingestion is completed
+[ 2024-12-14 10:24:44,208 ] 27 root - INFO - Data Validataion initiated
+[ 2024-12-14 10:24:44,397 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-14 10:24:44,407 ] 33 root - INFO - Dataframe has columns:32
+[ 2024-12-14 10:24:44,408 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-14 10:24:44,408 ] 33 root - INFO - Dataframe has columns:32
+[ 2024-12-14 10:24:45,368 ] 33 root - INFO - Data Validataion is completed
+[ 2024-12-14 10:24:45,368 ] 34 root - INFO - Data Transformation initiated
+[ 2024-12-14 10:24:45,368 ] 63 root - INFO - Entered Data Transformation stage
+[ 2024-12-14 10:24:45,491 ] 50 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2024-12-14 10:24:45,491 ] 55 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}

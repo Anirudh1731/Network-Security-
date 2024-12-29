@@ -42,7 +42,7 @@ class NetworkDataExtract():
             self.collection=collection
             self.records=records
 
-            self.mongo_client=pymongo.MongoClient(MONGO_DB_URI)
+            self.mongo_client=pymongo.MongoClient(MONGO_DB_URI,tlsCAFile=ca)
             self.database = self.mongo_client[self.database]
             
             self.collection=self.database[self.collection]

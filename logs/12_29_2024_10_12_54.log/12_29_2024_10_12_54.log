@@ -1,0 +1,28 @@
+[ 2024-12-29 10:12:58,915 ] 22 root - INFO - Exported train and test file path.
+[ 2024-12-29 10:13:07,221 ] 96 pymongo.serverSelection - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 6770d35b7ec05e0481db4c4e, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6770d35b7ec05e0481db4c4e"}, "remainingTimeMS": 30}
+[ 2024-12-29 10:13:17,514 ] 66 root - INFO - Performed train test split on the dataframe
+[ 2024-12-29 10:13:17,514 ] 68 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-12-29 10:13:17,524 ] 76 root - INFO - Exporting train and test file path.
+[ 2024-12-29 10:13:17,673 ] 85 root - INFO - Exported train and test file path.
+[ 2024-12-29 10:13:17,673 ] 27 root - INFO - Data Ingestion is completed
+[ 2024-12-29 10:13:17,673 ] 28 root - INFO - Data Validataion initiated
+[ 2024-12-29 10:13:17,774 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-29 10:13:17,774 ] 33 root - INFO - Dataframe has columns:31
+[ 2024-12-29 10:13:17,774 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-29 10:13:17,774 ] 33 root - INFO - Dataframe has columns:31
+[ 2024-12-29 10:13:18,073 ] 34 root - INFO - Data Validataion is completed
+[ 2024-12-29 10:13:18,073 ] 35 root - INFO - Data Transformation initiated
+[ 2024-12-29 10:13:18,073 ] 63 root - INFO - Entered Data Transformation stage
+[ 2024-12-29 10:13:18,154 ] 50 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2024-12-29 10:13:18,154 ] 55 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-12-29 10:13:18,173 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-12-29 10:13:18,178 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-12-29 10:13:18,178 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-12-29 10:13:18,179 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-12-29 10:13:18,179 ] 41 root - INFO - Data Transformation completed
+[ 2024-12-29 10:13:18,179 ] 44 root - INFO - Model Training sstared
+[ 2024-12-29 10:22:28,788 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015B050EB460>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2024-12-29 10:22:37,232 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015B050EB3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2024-12-29 10:22:49,724 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015B0907CFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2024-12-29 10:23:10,561 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015B05119600>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2024-12-29 10:23:46,785 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015B05119810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create

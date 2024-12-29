@@ -34,9 +34,10 @@ class DataIngestion:
             self.mongo_client=pymongo.MongoClient(MONGO_DB_URI)
             collection=self.mongo_client[database_name][collection_name]
             df=pd.DataFrame(collection.find())
-
+            print(df.columns.to_list())
             if "_id" in df.columns.to_list():
-                df.drop(columns=["_id"],axis=1)
+                print("Yes")
+                df.drop(columns=["_id"],axis=1,inplace=True)
 
             df.replace({"na":np.nan},inplace=True)
 
@@ -92,7 +93,7 @@ class DataIngestion:
             dataframe=self.export_data_into_feature_store(dataframe)
             self.split_data_as_train_test(dataframe)
             dataingestionartifact=DataIngestionArtifact(trained_file_path=self.data_ingestion_config.training_file_path,test_file_path=self.data_ingestion_config.testing_file_path)
-            return DataIngestionArtifact
+            return dataingestionartifact
         
         except Exception as e:
             raise NetworkSecurityException(e,sys)

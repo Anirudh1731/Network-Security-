@@ -1,0 +1,23 @@
+[ 2024-12-14 12:09:37,447 ] 22 root - INFO - Exported train and test file path.
+[ 2024-12-14 12:09:41,810 ] 96 pymongo.serverSelection - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 675d282d2c638016fb1f7b22, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.pcljl.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "675d282d2c638016fb1f7b22"}, "remainingTimeMS": 30}
+[ 2024-12-14 12:09:49,833 ] 66 root - INFO - Performed train test split on the dataframe
+[ 2024-12-14 12:09:49,833 ] 68 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-12-14 12:09:49,843 ] 76 root - INFO - Exporting train and test file path.
+[ 2024-12-14 12:09:50,027 ] 85 root - INFO - Exported train and test file path.
+[ 2024-12-14 12:09:50,027 ] 27 root - INFO - Data Ingestion is completed
+[ 2024-12-14 12:09:50,027 ] 28 root - INFO - Data Validataion initiated
+[ 2024-12-14 12:09:50,227 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-14 12:09:50,227 ] 33 root - INFO - Dataframe has columns:31
+[ 2024-12-14 12:09:50,227 ] 32 root - INFO - Required number of columns is 2
+[ 2024-12-14 12:09:50,227 ] 33 root - INFO - Dataframe has columns:31
+[ 2024-12-14 12:09:50,613 ] 34 root - INFO - Data Validataion is completed
+[ 2024-12-14 12:09:50,614 ] 35 root - INFO - Data Transformation initiated
+[ 2024-12-14 12:09:50,614 ] 63 root - INFO - Entered Data Transformation stage
+[ 2024-12-14 12:09:50,746 ] 50 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2024-12-14 12:09:50,746 ] 55 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-12-14 12:09:50,783 ] 45 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-12-14 12:09:50,793 ] 49 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-12-14 12:09:50,793 ] 45 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-12-14 12:09:50,801 ] 49 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-12-14 12:09:50,808 ] 41 root - INFO - Data Transformation completed
+[ 2024-12-14 12:09:50,808 ] 44 root - INFO - Model Training sstared

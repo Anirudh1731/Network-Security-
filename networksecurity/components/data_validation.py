@@ -82,24 +82,24 @@ class DataValidation:
             #VAALIDATE NUMBER OF COLUMNS
             status=self.validate_number_of_columns(dataframe=train_dataframe)
             if not status:
-                error_message=f"{error_message} Train dataframe does not contain all the columns.\n"
+                error_message=f"Train dataframe does not contain all the columns.\n"
 
             status=self.validate_number_of_columns(dataframe=test_dataframe)
             if not status:
-                error_message=f"{error_message} Test dataframe does not contain all the columns.\n"
+                error_message=f"Test dataframe does not contain all the columns.\n"
 
             #cHECKING DATA DRIFT
             status=self.detect_dataset_drift(base_df=train_dataframe,current_df=test_dataframe)
-            dir_path=os.path.dirname(self.data_validation_config.valid_train_file_path)
+            dir_path=os.path.dirname(self.data_validataion_config.valid_train_file_path)
             os.makedirs(dir_path,exist_ok=True)
 
             train_dataframe.to_csv(
-                self.data_validation_config.valid_train_file_path, index=False, header=True
+                self.data_validataion_config.valid_train_file_path, index=False, header=True
 
             )
 
             test_dataframe.to_csv(
-                self.data_validation_config.valid_test_file_path, index=False, header=True
+                self.data_validataion_config.valid_test_file_path, index=False, header=True
             )
             
             data_validation_artifact = DataValidationArtifact(
@@ -108,7 +108,7 @@ class DataValidation:
                 valid_test_file_path=self.data_ingestion_artifact.test_file_path,
                 invalid_train_file_path=None,
                 invalid_test_file_path=None,
-                drift_report_file_path=self.data_validation_config.drift_report_file_path,
+                drift_report_file_path=self.data_validataion_config.drift_report_file_path,
             )
             return data_validation_artifact
             
