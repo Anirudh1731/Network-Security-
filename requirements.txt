@@ -8,4 +8,6 @@ pymongo
 scikit-learn
 pyaml
 mlflow
+fastapi
+unicorn
 #-e .
